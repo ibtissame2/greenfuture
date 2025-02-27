@@ -10,10 +10,10 @@
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"[json]": {
+	"[css]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"[jsonc]": {
+	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"liveServer.settings.port": 5501
