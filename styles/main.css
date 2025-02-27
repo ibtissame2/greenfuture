@@ -25,6 +25,10 @@
 	box-sizing: border-box;
 }
 
+img {
+	user-select: none;
+}
+
 body {
 	background-image: url(/images/background.jpg);
 	background-position: center;
@@ -92,19 +96,18 @@ body {
 	transition: 0.3s;
 }
 
-.bnt .btn-green,
+.btn-green,
 .btn-white {
 	color: #424242;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 
-.bnt .btn-green {
+.btn-green {
 	border-color: var(--primary-color);
 	background-color: var(--primary-color);
 }
 
-.bnt:hover,
 .btn-green:hover,
 .btn-transparent:hover {
 	background-color: var(--primary-color);
