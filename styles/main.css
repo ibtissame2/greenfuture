@@ -25,6 +25,10 @@
 	box-sizing: border-box;
 }
 
+img {
+	user-select: none;
+}
+
 body {
 	background-image: url(/images/background.jpg);
 	background-position: center;
