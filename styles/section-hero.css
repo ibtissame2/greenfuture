@@ -1,0 +1,41 @@
+#hero .hero-content {
+	margin-top: 80px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#hero .left {
+	flex-direction: column;
+	align-items: start;
+}
+
+#hero .main-text {
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+
+#hero .sub-text {
+	font-size: 1rem;
+	letter-spacing: 1px;
+	font-weight: 400;
+	color: #f1f8e9cc;
+	margin-bottom: 50px;
+	padding-right: 60px;
+	z-index: 1;
+}
+
+#hero .btn-green {
+	margin-right: 20px;
+}
+
+#hero .right img {
+	width: 130%;
+	max-width: 560px;
+	aspect-ratio: 2600 / 2600;
+	filter: drop-shadow(0 0 20px var(--primary-color));
+	animation: 30s treeScale linear infinite;
+	pointer-events: none;
+}

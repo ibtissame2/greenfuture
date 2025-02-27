@@ -1,0 +1,200 @@
+.header .logo {
+	animation: 1.2s leftIn ease-out forwards;
+	animation-delay: 0.4s;
+	opacity: 0;
+}
+
+.header .head-cta {
+	animation: 1.2s rightIn ease-out forwards;
+	animation-delay: 0.4s;
+	opacity: 0;
+}
+
+.header .nav-links {
+	animation: 1.2s topIn ease-out forwards;
+	animation-delay: 0.4s;
+	opacity: 0;
+}
+
+.section-title {
+	animation: 1s bottomIn ease-out forwards;
+	animation-delay: 0.2s;
+	opacity: 0;
+}
+
+#hero .main-text {
+	animation: 1s bottomIn ease-out forwards;
+	animation-delay: 0.2s;
+	opacity: 0;
+}
+
+#hero .sub-text {
+	animation: 1.2s bottomIn ease-out forwards;
+	animation-delay: 0.4s;
+	opacity: 0;
+}
+
+#hero .right {
+	animation: 1.6s rightIn ease-out forwards;
+	animation-delay: 0.4s;
+	opacity: 0;
+}
+
+#hero .hero-cta {
+	animation: 1.6s bottomIn ease-out forwards;
+	animation-delay: 0.6s;
+	opacity: 0;
+}
+
+#hero .social {
+	animation: 1.8s bottomIn ease-out forwards;
+	animation-delay: 0.6s;
+	opacity: 0;
+}
+
+#about .about-p1 {
+	animation: 1.2s bottomIn ease-out forwards;
+	animation-delay: 0.4s;
+	opacity: 0;
+}
+
+#about .about-p2 {
+	animation: 1.6s bottomIn ease-out forwards;
+	animation-delay: 0.6s;
+	opacity: 0;
+}
+
+#about .btn-white .bnt {
+	animation: 1.8s bottomIn ease-out forwards;
+	animation-delay: 0.6s;
+	opacity: 0;
+}
+
+#products .btn-white {
+	animation: 1.2s rightIn ease-out forwards;
+	animation-delay: 0.4s;
+	opacity: 0;
+}
+
+#products .crd-1 {
+	animation: 1s bottomIn ease-out forwards;
+	animation-delay: 0.2s;
+	opacity: 0;
+}
+
+#products .crd-2 {
+	animation: 1.2s bottomIn ease-out forwards;
+	animation-delay: 0.4s;
+	opacity: 0;
+}
+
+#products .crd-3 {
+	animation: 1.6s bottomIn ease-out forwards;
+	animation-delay: 0.6s;
+	opacity: 0;
+}
+
+#products .crd-4 {
+	animation: 1.8s bottomIn ease-out forwards;
+	animation-delay: 0.6s;
+	opacity: 0;
+}
+
+#contact .right {
+	animation: 1.6s leftIn ease-out forwards;
+	animation-delay: 0.4s;
+	opacity: 0;
+}
+
+#contact p {
+	animation: 1.2s bottomIn ease-out forwards;
+	animation-delay: 0.4s;
+	opacity: 0;
+}
+
+#contact button {
+	animation: 1.8s bottomIn ease-out forwards;
+	animation-delay: 0.6s;
+	opacity: 0;
+}
+
+#contact .input-1 {
+	animation: 1.1s bottomIn ease-out forwards;
+	animation-delay: 0.3s;
+	opacity: 0;
+}
+
+#contact .input-2 {
+	animation: 1.3s bottomIn ease-out forwards;
+	animation-delay: 0.5s;
+	opacity: 0;
+}
+
+#contact textarea {
+	animation: 1.6s bottomIn ease-out forwards;
+	animation-delay: 0.6s;
+	opacity: 0;
+}
+
+#footer .social {
+	animation: 1s bottomIn ease-out forwards;
+	animation-delay: 0.2s;
+	opacity: 0;
+}
+
+#footer .copyright {
+	animation: 1.2s bottomIn ease-out forwards;
+	animation-delay: 0.4s;
+	opacity: 0;
+}
+
+@keyframes treeScale {
+	50% {
+		transform: scale(1.1);
+		filter: drop-shadow(0 0 100px var(--primary-color));
+	}
+}
+
+@keyframes topIn {
+	from {
+		transform: translateY(-200px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes bottomIn {
+	from {
+		transform: translateY(200px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes leftIn {
+	from {
+		transform: translateX(-200px);
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes rightIn {
+	from {
+		transform: translateX(200px);
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}

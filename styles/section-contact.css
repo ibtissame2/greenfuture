@@ -1,0 +1,47 @@
+#contact .contact-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#contact .right img {
+	width: 85%;
+	aspect-ratio: 4500 / 4082;
+	margin: 100px 100px 0 0;
+}
+
+#contact p {
+	font-size: 1.2rem;
+	margin-bottom: 50px;
+}
+
+#contact .form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+}
+
+#contact input,
+#contact textarea {
+	background-color: transparent;
+	font-size: 1.2rem;
+	padding: 15px;
+	border: 1px solid var(--text-color);
+	border-radius: 15px;
+}
+
+#contact textarea {
+	height: 180px;
+	resize: none;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+	color: var(--text-color);
+	opacity: 0.75;
+}
+
+#contact button {
+	padding: 15px;
+	border-radius: 15px;
+}

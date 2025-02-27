@@ -1,0 +1,69 @@
+#footer {
+	height: auto;
+	background-image: none;
+	background-color: var(--footer-bg);
+}
+
+#footer .section-wrap {
+	padding-block: 80px;
+	height: auto;
+	margin: auto;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+#footer .copyright .text {
+	font-size: 0.9rem;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#footer .copyright {
+	position: relative;
+	width: fit-content;
+	margin: auto;
+}
+
+#footer .butterfly-1 {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: -8px;
+	left: -4px;
+	rotate: -20deg;
+	transform: rotateY(180deg);
+}
+
+#footer .butterfly-2 {
+	width: 25px;
+	height: 25px;
+	scale: 0.5;
+	position: absolute;
+	bottom: -20px;
+	right: -4px;
+	rotate: 50deg;
+}
+
+.social {
+	margin: auto;
+}
+
+.social i {
+	height: 40px;
+	width: 40px;
+	font-size: 1.2rem;
+	border: 1px solid var(--text-color);
+	border-radius: 25px;
+	margin: 10px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.social i:hover {
+	border-color: var(--primary-color);
+	box-shadow: 0 0 25px var(--primary-color);
+	text-shadow: 0 0 25px var(--primary-color);
+	transform: rotate(360deg);
+	color: var(--primary-color);
+}

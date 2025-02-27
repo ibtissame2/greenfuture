@@ -1,0 +1,18 @@
+#about .section-title {
+	text-align: center;
+}
+
+#about p {
+	font-size: 1.2rem;
+	line-height: 1.6;
+	margin-bottom: 50px;
+}
+
+#about img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0.7;
+	pointer-events: none;
+}
