@@ -1,333 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Greenfuture</title>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/animation.css" />
+		<link rel="stylesheet" href="styles/navbar.css" />
+		<link rel="stylesheet" href="styles/section-hero.css" />
+		<link rel="stylesheet" href="styles/section-about.css" />
+		<link rel="stylesheet" href="styles/section-products.css" />
+		<link rel="stylesheet" href="styles/section-contact.css" />
+		<link rel="stylesheet" href="styles/section-footer.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Greenfuture</title>
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-	<link rel="stylesheet" href="styles/main.css" />
-	<link rel="stylesheet" href="styles/animation.css" />
-	<link rel="stylesheet" href="styles/navbar.css" />
-	<link rel="stylesheet" href="styles/section-hero.css" />
-	<link rel="stylesheet" href="styles/section-about.css" />
-	<link rel="stylesheet" href="styles/section-products.css" />
-	<link rel="stylesheet" href="styles/section-contact.css" />
-	<link rel="stylesheet" href="styles/section-footer.css" />
-</head>
-
-<body>
-	<header class="header flex-center">
-		<div class="flex-between">
-			<div class="logo flex">
-				<div class="butterfly butterfly-1"></div>
-				<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="26.6" height="25.2"
-					viewBox="0 0 133.000000 126.000000" preserveAspectRatio="xMidYMid meet">
-					<g transform="translate(0.000000,126.000000) scale(0.100000,-0.100000)" fill="var(--text-color)"
-						stroke="none">
-						<path
-							d="M548 1105 c-208 -53 -361 -206 -414 -415 -14 -54 -15 -92 -9 -225 9 -205 9 -184 0 -298 l-8 -97 76 0 77 0 0 69 c0 43 5 72 12 79 7 5 87 12 178 14 157 4 169 6 247 37 149 58 251 152 323 296 61 123 81 214 87 399 l6 159 -44 -9 c-51 -10 -240 -11 -379 -1 -69 5 -111 3 -152 -8z m326 -151 l99 -7 -7 -66 c-24 -258 -151 -431 -359 -487 -68 -18 -272 -30 -280 -17 -10 17 65 124 122 175 29 26 80 64 112 84 l60 36 -32 56 c-17 32 -34 61 -38 65 -11 11 -146 -80 -220 -149 l-64 -59 6 49 c19 137 124 261 265 313 71 26 70 25 336 7z" />
-					</g>
-				</svg>
-				<span class="text-green">GREEN</span>FUTURE
-			</div>
-
-			<nav class="nav-links">
-				<p class="nav-item" onclick="scrollToSection('hero')">Home</p>
-				<p class="nav-item" onclick="scrollToSection('about')">About</p>
-				<p class="nav-item" onclick="scrollToSection('blog')">Blog</p>
-				<p class="nav-item" onclick="scrollToSection('products')">Products</p>
-				<p class="nav-item" onclick="scrollToSection('footer')">Contact</p>
-			</nav>
-
-			<div class="head-cta flex">
-				<button class="btn-transparent">Login</button>
-				<button class="btn-transparent">
-					<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 62.000000 64.000000"
-						preserveAspectRatio="xMidYMid meet">
-						<g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" fill="var(--text-color)"
-							stroke="none">
+	<body>
+		<header class="header flex-center">
+			<div class="flex-between">
+				<div class="logo flex">
+					<div class="butterfly butterfly-1"></div>
+					<svg
+						version="1.0"
+						xmlns="http://www.w3.org/2000/svg"
+						width="26.6"
+						height="25.2"
+						viewBox="0 0 133.000000 126.000000"
+						preserveAspectRatio="xMidYMid meet"
+					>
+						<g
+							transform="translate(0.000000,126.000000) scale(0.100000,-0.100000)"
+							fill="var(--text-color)"
+							stroke="none"
+						>
 							<path
-								d="M52 587 c-12 -13 -22 -28 -22 -33 0 -6 18 -28 40 -49 l40 -39 0 -158 c0 -146 2 -159 21 -176 16 -15 17 -21 6 -25 -21 -8 -27 -43 -10 -67 23 -32 74 -24 88 14 8 24 6 31 -14 47 -23 19 -22 19 125 19 120 0 145 -2 132 -13 -42 -33 -18 -90 35 -85 24 2 34 10 42 32 8 25 6 31 -18 50 -21 17 -27 30 -27 59 l0 37 -150 0 c-127 0 -150 2 -150 15 0 13 26 15 171 15 l170 0 13 33 c8 17 26 76 41 129 23 80 25 101 15 113 -10 13 -47 15 -223 15 l-211 0 -46 45 -46 45 -22 -23z m448 -209 c-11 -33 -23 -65 -28 -70 -5 -5 -69 -7 -143 -6 l-134 3 -3 68 -3 67 165 0 164 0 -18 -62z" />
+								d="M548 1105 c-208 -53 -361 -206 -414 -415 -14 -54 -15 -92 -9 -225 9 -205 9 -184 0 -298 l-8 -97 76 0 77 0 0 69 c0 43 5 72 12 79 7 5 87 12 178 14 157 4 169 6 247 37 149 58 251 152 323 296 61 123 81 214 87 399 l6 159 -44 -9 c-51 -10 -240 -11 -379 -1 -69 5 -111 3 -152 -8z m326 -151 l99 -7 -7 -66 c-24 -258 -151 -431 -359 -487 -68 -18 -272 -30 -280 -17 -10 17 65 124 122 175 29 26 80 64 112 84 l60 36 -32 56 c-17 32 -34 61 -38 65 -11 11 -146 -80 -220 -149 l-64 -59 6 49 c19 137 124 261 265 313 71 26 70 25 336 7z"
+							/>
 						</g>
 					</svg>
-				</button>
+					<span class="text-green">GREEN</span>FUTURE
+				</div>
+
+				<nav class="nav-links">
+					<p class="nav-item" onclick="scrollToSection('hero')">Home</p>
+					<p class="nav-item" onclick="scrollToSection('about')">About</p>
+					<p class="nav-item" onclick="scrollToSection('blog')">Blog</p>
+					<p class="nav-item" onclick="scrollToSection('products')">Products</p>
+					<p class="nav-item" onclick="scrollToSection('footer')">Contact</p>
+				</nav>
+
+				<div class="head-cta flex">
+					<button class="btn-transparent">Login</button>
+					<button class="btn-transparent">
+						<svg
+							version="1.0"
+							xmlns="http://www.w3.org/2000/svg"
+							width="15"
+							height="15"
+							viewBox="0 0 62.000000 64.000000"
+							preserveAspectRatio="xMidYMid meet"
+						>
+							<g
+								transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)"
+								fill="var(--text-color)"
+								stroke="none"
+							>
+								<path
+									d="M52 587 c-12 -13 -22 -28 -22 -33 0 -6 18 -28 40 -49 l40 -39 0 -158 c0 -146 2 -159 21 -176 16 -15 17 -21 6 -25 -21 -8 -27 -43 -10 -67 23 -32 74 -24 88 14 8 24 6 31 -14 47 -23 19 -22 19 125 19 120 0 145 -2 132 -13 -42 -33 -18 -90 35 -85 24 2 34 10 42 32 8 25 6 31 -18 50 -21 17 -27 30 -27 59 l0 37 -150 0 c-127 0 -150 2 -150 15 0 13 26 15 171 15 l170 0 13 33 c8 17 26 76 41 129 23 80 25 101 15 113 -10 13 -47 15 -223 15 l-211 0 -46 45 -46 45 -22 -23z m448 -209 c-11 -33 -23 -65 -28 -70 -5 -5 -69 -7 -143 -6 l-134 3 -3 68 -3 67 165 0 164 0 -18 -62z"
+								/>
+							</g>
+						</svg>
+					</button>
+				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<section id="hero" class="section flex-center">
-		<div class="section-wrap">
-			<div class="hero-content">
-				<div class="left flex-center">
-					<h1 class="main-text">
-						<p>Plant <span class="text-green">a Tree,</span></p>
-						<p>Save <span class="text-green"> a Life!</span></p>
-					</h1>
+		<section id="hero" class="section flex-center">
+			<div class="section-wrap">
+				<div class="hero-content">
+					<div class="left flex-center">
+						<h1 class="main-text">
+							<p>Plant <span class="text-green">a Tree,</span></p>
+							<p>Save <span class="text-green"> a Life!</span></p>
+						</h1>
 
-					<h2 class="sub-text">
-						Choose from a wide selection of trees and shrubs to transform your landscape while supporting crucial
-						reforestation efforts in our nation’s forests. Every purchase from our nursery plants a tree where it’s
-						needed most.
-					</h2>
+						<h2 class="sub-text">
+							Choose from a wide selection of trees and shrubs to transform your landscape while supporting crucial
+							reforestation efforts in our nation’s forests. Every purchase from our nursery plants a tree where it’s
+							needed most.
+						</h2>
 
-					<div class="hero-cta">
-						<button href="#products" class="btn-green">Shop Now</button>
-						<button class="btn-white">Learn more</button>
+						<div class="hero-cta">
+							<button href="#products" class="btn-green">Shop Now</button>
+							<button class="btn-white">Learn more</button>
+						</div>
+					</div>
+
+					<div class="right flex-center">
+						<img src="images/tr1.png" alt="big-tree-image" />
 					</div>
 				</div>
 
-				<div class="right flex-center">
-					<img src="images/tr1.png" alt="big-tree-image" />
-				</div>
-			</div>
-
-			<div class="social flex-center">
-				<i class="fa-brands flex-center fa-facebook-f"></i>
-				<i class="fa-brands flex-center fa-twitter"></i>
-				<i class="fa-brands flex-center fa-linkedin-in"></i>
-				<i class="fa-brands flex-center fa-youtube"></i>
-			</div>
-		</div>
-	</section>
-
-	<section id="about" class="section flex-center">
-		<div class="section-wrap">
-			<h3 class="section-title"><span class="text-green">About </span>us</h3>
-			<p class="about-p1">
-				Welcome to greenfuture, your trusted source for high-quality trees and plants! We are passionate about
-				bringing the beauty of nature to homes, gardens, and landscapes. Whether you're looking for fruit trees, shade
-				trees, or ornamental plants, we are here to help you find the perfect addition to your space. Our team of
-				experts is dedicated to providing exceptional customer service and expert advice to help you choose the right
-				trees and plants for your needs.
-			</p>
-			<p class="about-p2">
-				At greenfuture, our mission is to promote greener environments by providing healthy, sustainable, and
-				carefully nurtured trees. We believe that every tree planted contributes to a healthier planet, cleaner air,
-				and a more beautiful world. That's why we are committed to offering a wide selection of trees and plants that
-				are not only beautiful but also beneficial to the environment.
-			</p>
-			<button class="btn-white">Learn more</button>
-
-			<img src="images/grass.png" />
-		</div>
-	</section>
-
-	<section id="products" class="section flex-center">
-		<div class="section-wrap">
-			<div class="flex-between">
-				<h3 class="section-title"><span class="text-green">our </span>products</h3>
-				<button class="btn-white">See all</button>
-			</div>
-
-			<div class="products-grid">
-				<section class="slider">
-					<div class="card">
-
-						<div class="card-content">
-							<img src="images/—Pngtree—apple tree isolated_14595299.png" alt="" class="card-img">
-							<h1 class="card-title">Honeycrisp Apple Tree</h1>
-							<div class="card-body">
-								<div class="card-star">
-									<span class="rating-value">4.5</span>
-									<span class="star">&#9733;</span>
-								</div>
-								<p class="card-price">$119.99</p>
-							</div>
-							<div class="card-footer">
-								<button class="btn btn-green btn-success">Buy Now</button>
-								<button class="btn btn-green btn-border add-to-cart">Add To Cart</button>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-content">
-							<img src="images/—Pngtree—autumn blaze maple isolated on_14887703.png" alt="" class="card-img">
-							<h1 class="card-title">Autumn Blaze Red Maple Tree</h1>
-							<div class="card-body">
-								<div class="card-star">
-									<span class="rating-value">4</span>
-									<span class="star">&#9733;</span>
-								</div>
-								<p class="card-price">$99.99</p>
-							</div>
-							<div class="card-footer">
-								<button class="btn btn-green btn-success">Buy Now</button>
-								<button class="btn btn-green btn-border add-to-cart">Add To Cart</button>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-content">
-							<img src="images/—Pngtree—willow tree transparent background_16121377.png" alt="" class="card-img">
-							<h1 class="card-title">Weeping Willow Tree</h1>
-							<div class="card-body">
-								<div class="card-star">
-									<span class="rating-value">4.6</span>
-									<span class="star">&#9733;</span>
-								</div>
-								<p class="card-price">$75.99</p>
-							</div>
-							<div class="card-footer">
-								<button class="btn btn-green btn-success">Buy Now</button>
-								<button class="btn btn-green btn-border add-to-cart">Add To Cart</button>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-content">
-							<img src="images/—Pngtree—palm tree 5-real png_5670308.png" alt="" class="card-img">
-							<h1 class="card-title">Windmill Palm Tree</h1>
-							<div class="card-body">
-								<div class="card-star">
-									<span class="rating-value">4.7</span>
-									<span class="star">&#9733;</span>
-								</div>
-								<p class="card-price">$74.99</p>
-							</div>
-							<div class="card-footer">
-								<button class="btn btn-green btn-success">Buy Now</button>
-								<button class="btn btn-green btn-border add-to-cart">Add To Cart</button>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-content">
-							<img src="images/—Pngtree—fig tree_20493402.png" alt="" class="card-img">
-							<h1 class="card-title">Fignomenal Fig Tree</h1>
-							<div class="card-body">
-								<div class="card-star">
-									<span class="rating-value">4.5</span>
-									<span class="star">&#9733;</span>
-								</div>
-								<p class="card-price">$45.99</p>
-							</div>
-							<div class="card-footer">
-								<button class="btn btn-green btn-success">Buy Now</button>
-								<button class="btn btn-green btn-border add-to-cart">Add To Cart</button>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-content">
-							<img src="images/—Pngtree—a realistic looking pine tree_6720945.png" alt="" class="card-img">
-							<h1 class="card-title">Austrian Pine Tree</h1>
-							<div class="card-body">
-								<div class="card-star">
-									<span class="rating-value">4.4</span>
-									<span class="star">&#9733;</span>
-								</div>
-								<p class="card-price">$40.99</p>
-							</div>
-							<div class="card-footer">
-								<button class="btn btn-green btn-success">Buy Now</button>
-								<button class="btn btn-green btn-border add-to-cart">Add To Cart</button>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-content">
-							<img src="images/—Pngtree—olive tree_6967390.png" alt="" class="card-img">
-							<h1 class="card-title">Arbequina Olive Tree</h1>
-							<div class="card-body">
-								<div class="card-star">
-									<span class="rating-value">4.5</span>
-									<span class="star">&#9733;</span>
-								</div>
-								<p class="card-price">$58.99</p>
-							</div>
-							<div class="card-footer">
-								<button class="btn btn-green btn-success">Buy Now</button>
-								<button class="btn btn-green btn-border add-to-cart">Add To Cart</button>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-content">
-							<img src="images/—Pngtree—lemon tree plant element three-dimensional_14102765.png" alt=""
-								class="card-img">
-							<h1 class="card-title">Harvey Lemon Tree</h1>
-							<div class="card-body">
-								<div class="card-star">
-									<span class="rating-value">4.4</span>
-									<span class="star">&#9733;</span>
-								</div>
-								<p class="card-price">$45.99</p>
-							</div>
-							<div class="card-footer">
-								<button class="btn btn-green btn-success">Buy Now</button>
-								<button class="btn btn-green btn-border add-to-cart">Add To Cart</button>
-							</div>
-						</div>
-					</div>
-
-					<span class="arrow left">&#129120;</span>
-					<span class="arrow right">&#129122;</span>
-
-				</section>
-			</div>
-		</div>
-
-		<div class="shopping-cart" data-product-count="0">
-			<span class="cart-icon">&#128722;</span>
-		</div>
-
-	</section>
-
-	<section id="contact" class="section flex-center">
-		<div class="section-wrap">
-			<div class="contact-grid">
-				<div class="right">
-					<img src="images/tr2.png" alt="" />
-				</div>
-
-				<div class="left">
-					<h3 class="section-title"><span class="text-green">get in </span> touch</h3>
-
-					<p>Let’s create something amazing together. Send us a message now!</p>
-
-					<div class="form">
-						<input class="input-1" type="text" placeholder="Your name" spellcheck="false" />
-						<input class="input-2" type="text" placeholder="Your email" spellcheck="false" />
-						<textarea placeholder="Your message"></textarea>
-						<button class="btn-white">Send</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-	</section>
-
-	<section id="footer">
-		<div class="section-wrap flex-center">
-			<div>
 				<div class="social flex-center">
 					<i class="fa-brands flex-center fa-facebook-f"></i>
 					<i class="fa-brands flex-center fa-twitter"></i>
 					<i class="fa-brands flex-center fa-linkedin-in"></i>
 					<i class="fa-brands flex-center fa-youtube"></i>
 				</div>
+			</div>
+		</section>
 
-				<div class="copyright flex-center" style="position: relative">
-					<div class="butterfly butterfly-1"></div>
-					<span class="text">© Ibtissame Hsini</span>
-					<div class="butterfly butterfly-2"></div>
+		<section id="about" class="section flex-center">
+			<div class="section-wrap">
+				<h3 class="section-title"><span class="text-green">About </span>us</h3>
+				<p class="about-p1">
+					Welcome to greenfuture, your trusted source for high-quality trees and plants! We are passionate about
+					bringing the beauty of nature to homes, gardens, and landscapes. Whether you're looking for fruit trees, shade
+					trees, or ornamental plants, we are here to help you find the perfect addition to your space. Our team of
+					experts is dedicated to providing exceptional customer service and expert advice to help you choose the right
+					trees and plants for your needs.
+				</p>
+				<p class="about-p2">
+					At greenfuture, our mission is to promote greener environments by providing healthy, sustainable, and
+					carefully nurtured trees. We believe that every tree planted contributes to a healthier planet, cleaner air,
+					and a more beautiful world. That's why we are committed to offering a wide selection of trees and plants that
+					are not only beautiful but also beneficial to the environment.
+				</p>
+				<button class="btn-white">Learn more</button>
+
+				<img src="images/grass.png" />
+			</div>
+		</section>
+
+		<section id="products" class="section flex-center">
+			<div class="section-wrap">
+				<div class="flex-between">
+					<h3 class="section-title"><span class="text-green">our </span>products</h3>
+					<button class="btn-white">See all</button>
+				</div>
+
+				<div class="products-grid">
+					<section class="slider">
+						<div class="card">
+							<div class="card-content">
+								<img src="images/—Pngtree—apple tree isolated_14595299.png" alt="" class="card-img" />
+								<h1 class="card-title">Honeycrisp Apple Tree</h1>
+								<div class="card-body">
+									<div class="card-star">
+										<span class="rating-value">4.5</span>
+										<span class="star">&#9733;</span>
+									</div>
+									<p class="card-price">$119.99</p>
+								</div>
+								<div class="card-footer">
+									<button class="btn btn-transparent btn-success">Buy Now</button>
+									<button class="btn btn-transparent btn-border add-to-cart">Add To Cart</button>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-content">
+								<img src="images/—Pngtree—autumn blaze maple isolated on_14887703.png" alt="" class="card-img" />
+								<h1 class="card-title">Autumn Blaze Red Maple Tree</h1>
+								<div class="card-body">
+									<div class="card-star">
+										<span class="rating-value">4</span>
+										<span class="star">&#9733;</span>
+									</div>
+									<p class="card-price">$99.99</p>
+								</div>
+								<div class="card-footer">
+									<button class="btn btn-transparent btn-success">Buy Now</button>
+									<button class="btn btn-transparent btn-border add-to-cart">Add To Cart</button>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-content">
+								<img src="images/—Pngtree—willow tree transparent background_16121377.png" alt="" class="card-img" />
+								<h1 class="card-title">Weeping Willow Tree</h1>
+								<div class="card-body">
+									<div class="card-star">
+										<span class="rating-value">4.6</span>
+										<span class="star">&#9733;</span>
+									</div>
+									<p class="card-price">$75.99</p>
+								</div>
+								<div class="card-footer">
+									<button class="btn btn-transparent btn-success">Buy Now</button>
+									<button class="btn btn-transparent btn-border add-to-cart">Add To Cart</button>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-content">
+								<img src="images/—Pngtree—palm tree 5-real png_5670308.png" alt="" class="card-img" />
+								<h1 class="card-title">Windmill Palm Tree</h1>
+								<div class="card-body">
+									<div class="card-star">
+										<span class="rating-value">4.7</span>
+										<span class="star">&#9733;</span>
+									</div>
+									<p class="card-price">$74.99</p>
+								</div>
+								<div class="card-footer">
+									<button class="btn btn-transparent btn-success">Buy Now</button>
+									<button class="btn btn-transparent btn-border add-to-cart">Add To Cart</button>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-content">
+								<img src="images/—Pngtree—fig tree_20493402.png" alt="" class="card-img" />
+								<h1 class="card-title">Fignomenal Fig Tree</h1>
+								<div class="card-body">
+									<div class="card-star">
+										<span class="rating-value">4.5</span>
+										<span class="star">&#9733;</span>
+									</div>
+									<p class="card-price">$45.99</p>
+								</div>
+								<div class="card-footer">
+									<button class="btn btn-transparent btn-success">Buy Now</button>
+									<button class="btn btn-transparent btn-border add-to-cart">Add To Cart</button>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-content">
+								<img src="images/—Pngtree—a realistic looking pine tree_6720945.png" alt="" class="card-img" />
+								<h1 class="card-title">Austrian Pine Tree</h1>
+								<div class="card-body">
+									<div class="card-star">
+										<span class="rating-value">4.4</span>
+										<span class="star">&#9733;</span>
+									</div>
+									<p class="card-price">$40.99</p>
+								</div>
+								<div class="card-footer">
+									<button class="btn btn-transparent btn-success">Buy Now</button>
+									<button class="btn btn-transparent btn-border add-to-cart">Add To Cart</button>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-content">
+								<img src="images/—Pngtree—olive tree_6967390.png" alt="" class="card-img" />
+								<h1 class="card-title">Arbequina Olive Tree</h1>
+								<div class="card-body">
+									<div class="card-star">
+										<span class="rating-value">4.5</span>
+										<span class="star">&#9733;</span>
+									</div>
+									<p class="card-price">$58.99</p>
+								</div>
+								<div class="card-footer">
+									<button class="btn btn-transparent btn-success">Buy Now</button>
+									<button class="btn btn-transparent btn-border add-to-cart">Add To Cart</button>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-content">
+								<img
+									src="images/—Pngtree—lemon tree plant element three-dimensional_14102765.png"
+									alt=""
+									class="card-img"
+								/>
+								<h1 class="card-title">Harvey Lemon Tree</h1>
+								<div class="card-body">
+									<div class="card-star">
+										<span class="rating-value">4.4</span>
+										<span class="star">&#9733;</span>
+									</div>
+									<p class="card-price">$45.99</p>
+								</div>
+								<div class="card-footer">
+									<button class="btn btn-transparent btn-success">Buy Now</button>
+									<button class="btn btn-transparent btn-border add-to-cart">Add To Cart</button>
+								</div>
+							</div>
+						</div>
+
+						<span class="arrow left">&#129120;</span>
+						<span class="arrow right">&#129122;</span>
+					</section>
 				</div>
 			</div>
-		</div>
-	</section>
 
-	<script src="scripts/navbar.js"></script>
+			<div class="shopping-cart" data-product-count="0">
+				<span class="cart-icon">&#128722;</span>
+			</div>
+		</section>
 
-	<script src="scripts/butterfly.js" type="module"></script>
+		<section id="contact" class="section flex-center">
+			<div class="section-wrap">
+				<div class="contact-grid">
+					<div class="right">
+						<img src="images/tr2.png" alt="" />
+					</div>
 
+					<div class="left">
+						<h3 class="section-title"><span class="text-green">get in </span> touch</h3>
 
+						<p>Let’s create something amazing together. Send us a message now!</p>
 
+						<div class="form">
+							<input class="input-1" type="text" placeholder="Your name" spellcheck="false" />
+							<input class="input-2" type="text" placeholder="Your email" spellcheck="false" />
+							<textarea placeholder="Your message"></textarea>
+							<button class="btn-white">Send</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<section id="footer">
+			<div class="section-wrap flex-center">
+				<div>
+					<div class="social flex-center">
+						<i class="fa-brands flex-center fa-facebook-f"></i>
+						<i class="fa-brands flex-center fa-twitter"></i>
+						<i class="fa-brands flex-center fa-linkedin-in"></i>
+						<i class="fa-brands flex-center fa-youtube"></i>
+					</div>
 
-	<script src="scripts/script.js"></script>
-</body>
+					<div class="copyright flex-center" style="position: relative">
+						<div class="butterfly butterfly-1"></div>
+						<span class="text">© Ibtissame Hsini</span>
+						<div class="butterfly butterfly-2"></div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<script src="scripts/navbar.js"></script>
+
+		<script src="scripts/butterfly.js" type="module"></script>
+
+		<script src="scripts/script.js"></script>
+	</body>
 </html>
