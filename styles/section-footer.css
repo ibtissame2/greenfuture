@@ -50,6 +50,8 @@
 }
 
 .social i {
+	position: relative;
+	z-index: 1;
 	height: 40px;
 	width: 40px;
 	font-size: 1.2rem;
