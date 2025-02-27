@@ -7,6 +7,7 @@
 	width: 85%;
 	aspect-ratio: 4500 / 4082;
 	margin: 100px 100px 0 0;
+	filter: drop-shadow(0 0 5px var(--primary-color));
 }
 
 #contact p {
