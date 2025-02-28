@@ -5,6 +5,7 @@ const renderers = [];
 
 // Create a butterfly scene for every div contains the class butterfly
 document.querySelectorAll('.butterfly').forEach(async function (e) {
+	e.style.overflow = 'hidden';
 	await new Promise(function (resolve) {
 		setTimeout(resolve, Math.random() * 100);
 	});
@@ -39,11 +40,7 @@ document.querySelectorAll('.butterfly').forEach(async function (e) {
 	);
 
 	function onResize() {
-		renderer.setSize(e.clientWidth * 6.5, e.clientHeight * 6.5);
-		renderer.domElement.style.position = 'absolute';
-		renderer.domElement.style.top = '-115%';
-		renderer.domElement.style.right = '0%';
-
+		renderer.setSize(e.clientWidth * 5, e.clientHeight * 5);
 		camera.aspect = e.clientWidth / e.clientHeight;
 		camera.updateProjectionMatrix();
 	}
@@ -53,6 +50,9 @@ document.querySelectorAll('.butterfly').forEach(async function (e) {
 		if (mixer) mixer.update(0.02);
 	}
 
+	renderer.domElement.style.position = 'absolute';
+	renderer.domElement.style.top = '-75%';
+	renderer.domElement.style.right = '0%';
 	onResize();
 
 	e.appendChild(renderer.domElement);
