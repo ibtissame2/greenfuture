@@ -1,4 +1,4 @@
-.header {
+#header {
 	width: 100%;
 	margin-top: 7vh;
 	padding: 0 0px 14px;
@@ -7,7 +7,7 @@
 	position: absolute;
 }
 
-.header.fixed {
+#header.fixed {
 	width: 100%;
 	margin-top: 0px;
 	padding: 14px 0px;
@@ -17,33 +17,33 @@
 	backdrop-filter: blur(12px);
 }
 
-.header.prepare-fixed {
+#header.prepare-fixed {
 	transition: background-color 0.5s ease-in-out;
 }
 
-.header.remove-fixed {
+#header.remove-fixed {
 	transition: background-color 0s ease-in-out;
 }
 
-.header > .flex-between {
+#header > .flex-between {
 	width: 80vw;
 	padding: calc(4vh + 14px) 110px 0px;
 	overflow: hidden;
 }
 
-.header.fixed > .flex-between {
+#header.fixed > .flex-between {
 	padding: 0px 110px;
 	overflow: visible;
 }
 
-.header .logo {
+#header .logo {
 	font-size: 2rem;
 	font-weight: bold;
 	letter-spacing: 2px;
 	cursor: pointer;
 }
 
-.header .butterfly-1 {
+#header .butterfly-1 {
 	width: 25px;
 	height: 25px;
 	position: absolute;
@@ -51,11 +51,11 @@
 	left: -6.5px;
 }
 
-.header .nav-links {
+#header .nav-links {
 	display: flex;
 }
 
-.header .nav-item {
+#header .nav-item {
 	font-size: 1.2rem;
 	letter-spacing: 1px;
 	margin: 8px 15px;
@@ -64,7 +64,7 @@
 	position: relative;
 }
 
-.header .nav-item::before {
+#header .nav-item::before {
 	content: '';
 	position: absolute;
 	bottom: -10px;
@@ -77,14 +77,14 @@
 	box-shadow: 0 0 3px var(--text-color);
 }
 
-.header .nav-item:hover {
+#header .nav-item:hover {
 	text-shadow: 0 0 10px var(--text-color);
 }
 
-.header .nav-item:hover::before {
+#header .nav-item:hover::before {
 	transform: translateX(-50%) scaleX(1);
 }
 
-.header .btn-transparent:first-child {
+#header .btn-transparent:first-child {
 	margin-right: 20px;
 }

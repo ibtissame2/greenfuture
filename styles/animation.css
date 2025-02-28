@@ -1,16 +1,16 @@
-.header .logo {
+#header .logo {
 	animation: 1.2s leftIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;
 }
 
-.header .head-cta {
+#header .head-cta {
 	animation: 1.2s rightIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;
 }
 
-.header .nav-links {
+#header .nav-links {
 	animation: 1.2s topIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;

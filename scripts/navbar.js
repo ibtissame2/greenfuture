@@ -1,4 +1,4 @@
-const header = document.querySelector('.header');
+const header = document.getElementById('header');
 
 // Sticky Header Effect
 window.onscroll = async function myFunction() {
