@@ -89,7 +89,7 @@
 
 	#header.within-hero {
 		width: calc(100vw - 10px);
-		margin-top: 7vh;
+		margin-top: min(7vh, 74px);
 		position: absolute;
 		background: none;
 		backdrop-filter: none;
@@ -108,7 +108,7 @@
 	}
 
 	#header.within-hero .limited-width {
-		padding-block: calc(4vh + 14px) 0;
+		padding-block: calc(min(4vh, 42.28px) + 14px) 0;
 	}
 
 	#header:not(.within-hero) .limited-width {
