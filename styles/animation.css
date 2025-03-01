@@ -4,7 +4,7 @@
 	opacity: 0;
 }
 
-#header .head-cta {
+#header .buttons {
 	animation: 1.2s rightIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;
