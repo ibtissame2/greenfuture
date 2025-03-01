@@ -42,11 +42,11 @@
 
 .social {
 	margin: auto;
+	position: relative;
+	z-index: 1;
 }
 
 .social i {
-	position: relative;
-	z-index: 1;
 	height: 30px;
 	width: 30px;
 	font-size: 0.75rem;

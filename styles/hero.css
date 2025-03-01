@@ -6,7 +6,7 @@
 #hero .hero-content {
 	display: grid;
 	justify-items: center;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 0fr;
 }
 
 #hero .left {
@@ -23,12 +23,9 @@
 	text-align: center;
 }
 
-#hero .sub-text {
-	font-size: 0.8rem;
-	font-weight: 400;
-	color: #f1f8e9cc;
-	z-index: 1;
+#hero .section-paragraph {
 	text-align: center;
+	font-weight: 400;
 }
 
 #hero .btn-green {
@@ -36,8 +33,9 @@
 }
 
 #hero .hero-content + .social {
-	margin-top: 20px;
+	margin-top: 10px;
 }
+
 #hero .three-container {
 	aspect-ratio: 2600 / 2600;
 	max-height: 60vw;
@@ -92,9 +90,12 @@
 		text-align: left;
 	}
 
-	#hero .sub-text {
-		font-size: 0.95rem;
+	#hero .section-paragraph {
 		text-align: left;
+	}
+
+	#hero .hero-content + .social {
+		margin-top: 20px;
 	}
 
 	#hero .three-right {
@@ -122,8 +123,7 @@
 		line-height: 1.2;
 	}
 
-	#hero .sub-text {
-		font-size: 1rem;
+	#hero .section-paragraph {
 		padding-right: 60px;
 	}
 

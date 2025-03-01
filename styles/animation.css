@@ -111,7 +111,7 @@
 	opacity: 0;
 }
 
-#contact .right {
+#contact .image {
 	animation: 1.6s leftIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;
