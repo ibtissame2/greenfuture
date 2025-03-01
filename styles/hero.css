@@ -1,5 +1,5 @@
 #hero .section-wrap {
-	height: var(--screen-section);
+	min-height: var(--screen-section);
 	flex-direction: column;
 	justify-content: space-evenly;
 }

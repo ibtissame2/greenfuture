@@ -13,7 +13,8 @@ function onScroll(isAsync) {
 			}, 1);
 		}
 	}
-	if (window.scrollY > (window.innerHeight * 11) / 100) {
+	const navbarPosition = window.innerHeight > 1057.143 ? 74 + 42.28 : (window.innerHeight * 11) / 100;
+	if (window.scrollY > navbarPosition) {
 		useClasses('remove', 'remove-hero', 'prepare-hero');
 	} else {
 		useClasses('add', 'prepare-hero', 'remove-hero');
