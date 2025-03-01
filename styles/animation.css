@@ -28,25 +28,25 @@
 	opacity: 0;
 }
 
-#hero .sub-text {
+#hero .section-paragraph {
 	animation: 1.2s bottomIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;
 }
 
-#hero .three-right {
+#hero .tree-right {
 	animation: 1.6s rightIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;
 }
 
-#hero .three-bottom {
+#hero .tree-bottom {
 	animation: 1.6s bottomIn ease-out forwards;
 	animation-delay: 0.7s;
 	opacity: 0;
 }
 
-#hero .three {
+#hero .tree {
 	animation: 30s treeScale linear infinite;
 	animation-delay: 2.3s;
 }

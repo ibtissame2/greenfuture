@@ -37,36 +37,36 @@
 	margin-top: 10px;
 }
 
-#hero .three-container {
+#hero .tree-container {
 	aspect-ratio: 2600 / 2600;
 	max-height: 60vw;
 	width: min(60vw, 100%);
 }
 
-#hero .three {
+#hero .tree {
 	width: 100%;
 	height: 100%;
 	filter: drop-shadow(0 0 20px var(--primary-color));
 }
 
-#hero .three-bottom {
+#hero .tree-bottom {
 	visibility: visible;
 }
 
-#hero .three-right {
+#hero .tree-right {
 	visibility: hidden;
 	width: 0;
 }
 
 @media screen and (min-width: 500px) {
-	#hero .three-bottom {
+	#hero .tree-bottom {
 		max-height: 50vw;
 		width: min(50vw, 80%);
 	}
 }
 
 @media screen and (min-width: 670px) {
-	#hero .three-bottom {
+	#hero .tree-bottom {
 		max-height: 40vw;
 		width: min(40vw, 80%);
 	}
@@ -98,12 +98,12 @@
 		margin-top: 20px;
 	}
 
-	#hero .three-right {
+	#hero .tree-right {
 		visibility: visible;
 		width: min(min(100%, calc(100vw / 2.05 - 90px)), calc(min(908px, 86vh) - 260px));
 	}
 
-	#hero .three-bottom {
+	#hero .tree-bottom {
 		visibility: hidden;
 		width: 0;
 	}
