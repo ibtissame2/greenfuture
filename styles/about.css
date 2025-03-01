@@ -1,18 +1,23 @@
-#about .section-title {
-	text-align: center;
+#about p {
+	margin-bottom: min(1.5vh, 50px);
+	color: var(--text-color);
 }
 
-#about p {
-	font-size: 1.2rem;
-	line-height: 1.6;
-	margin-bottom: 50px;
+#about button {
+	margin-bottom: min(8vh, 100px);
 }
 
 #about img {
+	width: 100%;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	width: 100%;
-	opacity: 0.7;
-	pointer-events: none;
+	z-index: -1;
+	filter: brightness(70%) saturate(70%);
+}
+
+@media screen and (min-width: 650px) {
+	#about .section-title {
+		text-align: center;
+	}
 }
