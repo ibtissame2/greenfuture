@@ -81,24 +81,18 @@ body {
 .btn-green,
 .btn-white,
 .btn-transparent {
-	font-size: 1rem;
-	font-weight: bold;
+	font-size: 0.9rem;
+	font-weight: 500;
 	background-color: transparent;
 	border: 1px solid var(--text-color);
-	padding: 5px 25px;
+	padding: 4px 22px;
 	border-radius: 25px;
 	cursor: pointer;
 	transition: 0.3s;
 }
 
-.btn-green,
-.btn-white {
-	color: #424242;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-
 .btn-green {
+	color: #424242;
 	border-color: var(--primary-color);
 	background-color: var(--primary-color);
 }
@@ -111,6 +105,7 @@ body {
 }
 
 .btn-white {
+	color: #424242;
 	border-color: var(--text-color);
 	background-color: var(--text-color);
 }

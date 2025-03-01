@@ -78,7 +78,8 @@
 	}
 
 	#header .right-side {
-		display: none;
+		visibility: hidden;
+		width: 0;
 	}
 }
 
