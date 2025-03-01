@@ -1,5 +1,6 @@
 .section-wrap {
-	height: min(908px, calc(100vh - 88px));
+	--screen-section: min(908px, calc(100vh - 88px));
+	min-height: calc(var(--screen-section) / 1.25);
 	margin-block: 10px;
 	padding-block: 20px;
 	border: 1px solid var(--section-bg);
@@ -54,7 +55,7 @@
 	}
 
 	.section-wrap {
-		height: min(908px, 86vh);
+		--screen-section: min(908px, 86vh);
 		margin-block: min(3.5vh, 37px);
 		padding-block: 50px;
 		border-radius: 30px;

@@ -1,4 +1,5 @@
 #hero .section-wrap {
+	height: var(--screen-section);
 	flex-direction: column;
 	justify-content: space-evenly;
 }
@@ -46,7 +47,6 @@
 	width: 100%;
 	height: 100%;
 	filter: drop-shadow(0 0 20px var(--primary-color));
-	pointer-events: none;
 }
 
 #hero .three-bottom {
