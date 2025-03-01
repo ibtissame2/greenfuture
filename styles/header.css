@@ -8,10 +8,6 @@
 	backdrop-filter: blur(12px);
 }
 
-#header .limited-width {
-	overflow: hidden;
-}
-
 #header .logo {
 	font-size: 1rem;
 	font-weight: bold;
