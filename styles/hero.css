@@ -1,0 +1,133 @@
+#hero .section-wrap {
+	min-height: var(--screen-section);
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#hero .hero-content {
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 1fr 0fr;
+}
+
+#hero .left {
+	flex-direction: column;
+	gap: 20px;
+}
+
+#hero .main-text > * {
+	font-size: 2.2rem;
+	line-height: 1;
+	font-weight: 800;
+	white-space: nowrap;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#hero .section-paragraph {
+	text-align: center;
+	font-weight: 400;
+}
+
+#hero .btn-green {
+	margin-right: 10px;
+}
+
+#hero .hero-content + .social {
+	margin-top: 10px;
+}
+
+#hero .tree-container {
+	aspect-ratio: 2600 / 2600;
+	max-height: 60vw;
+	width: min(60vw, 100%);
+}
+
+#hero .tree {
+	width: 100%;
+	height: 100%;
+	filter: drop-shadow(0 0 20px var(--primary-color));
+}
+
+#hero .tree-bottom {
+	visibility: visible;
+}
+
+#hero .tree-right {
+	visibility: hidden;
+	width: 0;
+}
+
+@media screen and (min-width: 500px) {
+	#hero .tree-bottom {
+		max-height: 50vw;
+		width: min(50vw, 80%);
+	}
+}
+
+@media screen and (min-width: 670px) {
+	#hero .tree-bottom {
+		max-height: 40vw;
+		width: min(40vw, 80%);
+	}
+}
+
+@media screen and (min-width: 790px) {
+	#hero .section-wrap {
+		justify-content: flex-start;
+	}
+
+	#hero .hero-content {
+		grid-template-columns: 1.05fr 1fr;
+		margin-top: 80px;
+	}
+
+	#hero .left {
+		align-items: flex-start;
+	}
+
+	#hero .main-text > * {
+		text-align: left;
+	}
+
+	#hero .section-paragraph {
+		text-align: left;
+	}
+
+	#hero .hero-content + .social {
+		margin-top: 20px;
+	}
+
+	#hero .tree-right {
+		visibility: visible;
+		width: min(min(100%, calc(100vw / 2.05 - 90px)), calc(min(908px, 86vh) - 260px));
+	}
+
+	#hero .tree-bottom {
+		visibility: hidden;
+		width: 0;
+	}
+
+	#hero .btn-green {
+		margin-right: 11.5px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#hero .hero-content {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#hero .main-text > * {
+		font-size: 2.6rem;
+		line-height: 1.2;
+	}
+
+	#hero .section-paragraph {
+		padding-right: 60px;
+	}
+
+	#hero .btn-green {
+		margin-right: 20px;
+	}
+}

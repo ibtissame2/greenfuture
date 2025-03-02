@@ -1,16 +1,16 @@
-.header .logo {
+#header .logo {
 	animation: 1.2s leftIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;
 }
 
-.header .head-cta {
+#header .buttons {
 	animation: 1.2s rightIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;
 }
 
-.header .nav-links {
+#header .nav-links {
 	animation: 1.2s topIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;
@@ -28,19 +28,30 @@
 	opacity: 0;
 }
 
-#hero .sub-text {
+#hero .section-paragraph {
 	animation: 1.2s bottomIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;
 }
 
-#hero .right {
+#hero .tree-right {
 	animation: 1.6s rightIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;
 }
 
-#hero .hero-cta {
+#hero .tree-bottom {
+	animation: 1.6s bottomIn ease-out forwards;
+	animation-delay: 0.7s;
+	opacity: 0;
+}
+
+#hero .tree {
+	animation: 30s treeScale linear infinite;
+	animation-delay: 2.3s;
+}
+
+#hero .buttons {
 	animation: 1.6s bottomIn ease-out forwards;
 	animation-delay: 0.6s;
 	opacity: 0;
@@ -64,7 +75,7 @@
 	opacity: 0;
 }
 
-#about .btn-white .bnt {
+#about .btn-white {
 	animation: 1.8s bottomIn ease-out forwards;
 	animation-delay: 0.6s;
 	opacity: 0;
@@ -100,7 +111,7 @@
 	opacity: 0;
 }
 
-#contact .right {
+#contact .image {
 	animation: 1.6s leftIn ease-out forwards;
 	animation-delay: 0.4s;
 	opacity: 0;

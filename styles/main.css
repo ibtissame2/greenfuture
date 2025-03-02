@@ -6,13 +6,31 @@
 	--text-color: rgba(241, 248, 233, 1);
 	--section-bg: rgba(255, 255, 255, 0.2);
 	--section-blur: rgba(255, 255, 255, 0.3);
-	--section-hover: rgba(255, 255, 255, 0.3);
+	--section-hover: rgba(255, 255, 255, 0.4);
 	--footer-bg: rgba(19, 34, 23, 1);
 }
 
 ::selection {
 	color: var(--text-color);
 	background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgba(99, 148, 42, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+	width: 8px;
+	height: 8px;
+	border: 1px solid transparent;
+	background-clip: padding-box;
+	border-radius: 8px;
+	background-color: rgba(65, 113, 11, 0.8);
 }
 
 * {
@@ -27,39 +45,17 @@
 
 img {
 	user-select: none;
+	pointer-events: none;
 }
 
 body {
+	min-height: 100vh;
 	background-image: url(/images/background.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 100vh;
-}
-
-.section {
-	width: 100%;
-	min-height: 100vh;
-}
-
-.section-wrap {
-	background-color: var(--section-bg);
-	width: 80vw;
-	height: 86vh;
-	border: 1px solid var(--section-bg);
-	box-shadow: inset 0 0 5px #ffffff1a;
-	border-radius: 30px;
-	backdrop-filter: blur(12px);
-	padding: 50px 100px;
-	overflow: hidden;
-}
-
-.section-title {
-	font-size: 2rem;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin-bottom: 50px;
+	overflow-x: hidden;
 }
 
 .flex {
@@ -86,24 +82,18 @@ body {
 .btn-green,
 .btn-white,
 .btn-transparent {
-	font-size: 1rem;
-	font-weight: bold;
+	font-size: 0.9rem;
+	font-weight: 500;
 	background-color: transparent;
 	border: 1px solid var(--text-color);
-	padding: 8px 40px;
+	padding: 4px 22px;
 	border-radius: 25px;
 	cursor: pointer;
 	transition: 0.3s;
 }
 
-.btn-green,
-.btn-white {
-	color: #424242;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-
 .btn-green {
+	color: #424242;
 	border-color: var(--primary-color);
 	background-color: var(--primary-color);
 }
@@ -116,6 +106,7 @@ body {
 }
 
 .btn-white {
+	color: #424242;
 	border-color: var(--text-color);
 	background-color: var(--text-color);
 }
@@ -124,4 +115,12 @@ body {
 	background-color: var(--text-color);
 	border-color: var(--text-color);
 	box-shadow: 0 0 10px var(--text-color);
+}
+
+@media screen and (min-width: 1100px) {
+	.btn-green,
+	.btn-white,
+	.btn-transparent {
+		padding: 7px 35px;
+	}
 }

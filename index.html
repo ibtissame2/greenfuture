@@ -8,24 +8,24 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 		<link rel="stylesheet" href="styles/main.css" />
 		<link rel="stylesheet" href="styles/animation.css" />
-		<link rel="stylesheet" href="styles/navbar.css" />
-		<link rel="stylesheet" href="styles/section-hero.css" />
-		<link rel="stylesheet" href="styles/section-about.css" />
-		<link rel="stylesheet" href="styles/section-products.css" />
-		<link rel="stylesheet" href="styles/section-contact.css" />
-		<link rel="stylesheet" href="styles/section-footer.css" />
+		<link rel="stylesheet" href="styles/section.css" />
+		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="styles/hero.css" />
+		<link rel="stylesheet" href="styles/about.css" />
+		<link rel="stylesheet" href="styles/products.css" />
+		<link rel="stylesheet" href="styles/contact.css" />
+		<link rel="stylesheet" href="styles/footer.css" />
 	</head>
 
 	<body>
-		<header class="header flex-center">
-			<div class="flex-between">
+		<header id="header" class="flex-center within-hero">
+			<div class="flex-between limited-width">
 				<div class="logo flex">
-					<div class="butterfly butterfly-1"></div>
+					<div class="butterfly"></div>
 					<svg
+						class="leaf-logo"
 						version="1.0"
 						xmlns="http://www.w3.org/2000/svg"
-						width="26.6"
-						height="25.2"
 						viewBox="0 0 133.000000 126.000000"
 						preserveAspectRatio="xMidYMid meet"
 					>
@@ -42,71 +42,78 @@
 					<span class="text-green">GREEN</span>FUTURE
 				</div>
 
-				<nav class="nav-links">
-					<p class="nav-item" onclick="scrollToSection('hero')">Home</p>
-					<p class="nav-item" onclick="scrollToSection('about')">About</p>
-					<p class="nav-item" onclick="scrollToSection('blog')">Blog</p>
-					<p class="nav-item" onclick="scrollToSection('products')">Products</p>
-					<p class="nav-item" onclick="scrollToSection('footer')">Contact</p>
-				</nav>
+				<div class="right-side flex">
+					<nav class="nav-links flex">
+						<p class="nav-item" onclick="scrollToSection('hero')">Home</p>
+						<p class="nav-item" onclick="scrollToSection('about')">About</p>
+						<p class="nav-item" onclick="scrollToSection('products')">Products</p>
+						<p class="nav-item" onclick="scrollToSection('footer')">Contact</p>
+					</nav>
 
-				<div class="head-cta flex">
-					<button class="btn-transparent">Login</button>
-					<button class="btn-transparent">
-						<svg
-							version="1.0"
-							xmlns="http://www.w3.org/2000/svg"
-							width="15"
-							height="15"
-							viewBox="0 0 62.000000 64.000000"
-							preserveAspectRatio="xMidYMid meet"
-						>
-							<g
-								transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)"
-								fill="var(--text-color)"
-								stroke="none"
+					<div class="buttons flex">
+						<button class="btn-transparent">Login</button>
+						<button class="btn-transparent">
+							<svg
+								version="1.0"
+								xmlns="http://www.w3.org/2000/svg"
+								width="15"
+								height="15"
+								viewBox="0 0 62.000000 64.000000"
+								preserveAspectRatio="xMidYMid meet"
 							>
-								<path
-									d="M52 587 c-12 -13 -22 -28 -22 -33 0 -6 18 -28 40 -49 l40 -39 0 -158 c0 -146 2 -159 21 -176 16 -15 17 -21 6 -25 -21 -8 -27 -43 -10 -67 23 -32 74 -24 88 14 8 24 6 31 -14 47 -23 19 -22 19 125 19 120 0 145 -2 132 -13 -42 -33 -18 -90 35 -85 24 2 34 10 42 32 8 25 6 31 -18 50 -21 17 -27 30 -27 59 l0 37 -150 0 c-127 0 -150 2 -150 15 0 13 26 15 171 15 l170 0 13 33 c8 17 26 76 41 129 23 80 25 101 15 113 -10 13 -47 15 -223 15 l-211 0 -46 45 -46 45 -22 -23z m448 -209 c-11 -33 -23 -65 -28 -70 -5 -5 -69 -7 -143 -6 l-134 3 -3 68 -3 67 165 0 164 0 -18 -62z"
-								/>
-							</g>
-						</svg>
-					</button>
+								<g
+									transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)"
+									fill="var(--text-color)"
+									stroke="none"
+								>
+									<path
+										d="M52 587 c-12 -13 -22 -28 -22 -33 0 -6 18 -28 40 -49 l40 -39 0 -158 c0 -146 2 -159 21 -176 16 -15 17 -21 6 -25 -21 -8 -27 -43 -10 -67 23 -32 74 -24 88 14 8 24 6 31 -14 47 -23 19 -22 19 125 19 120 0 145 -2 132 -13 -42 -33 -18 -90 35 -85 24 2 34 10 42 32 8 25 6 31 -18 50 -21 17 -27 30 -27 59 l0 37 -150 0 c-127 0 -150 2 -150 15 0 13 26 15 171 15 l170 0 13 33 c8 17 26 76 41 129 23 80 25 101 15 113 -10 13 -47 15 -223 15 l-211 0 -46 45 -46 45 -22 -23z m448 -209 c-11 -33 -23 -65 -28 -70 -5 -5 -69 -7 -143 -6 l-134 3 -3 68 -3 67 165 0 164 0 -18 -62z"
+									/>
+								</g>
+							</svg>
+						</button>
+					</div>
 				</div>
 			</div>
 		</header>
 
 		<section id="hero" class="section flex-center">
-			<div class="section-wrap">
-				<div class="hero-content">
-					<div class="left flex-center">
-						<h1 class="main-text">
-							<p>Plant <span class="text-green">a Tree,</span></p>
-							<p>Save <span class="text-green"> a Life!</span></p>
-						</h1>
+			<div class="section-wrap flex-between">
+				<div>
+					<div class="hero-content">
+						<div class="left flex-center">
+							<h1 class="main-text">
+								<p>Plant <span class="text-green">a Tree,</span></p>
+								<p>Save <span class="text-green"> a Life!</span></p>
+							</h1>
 
-						<h2 class="sub-text">
-							Choose from a wide selection of trees and shrubs to transform your landscape while supporting crucial
-							reforestation efforts in our nation’s forests. Every purchase from our nursery plants a tree where it’s
-							needed most.
-						</h2>
+							<h2 class="section-paragraph">
+								Choose from a wide selection of trees and shrubs to transform your landscape while supporting crucial
+								reforestation efforts in our nation’s forests. Every purchase from our nursery plants a tree where it’s
+								needed most.
+							</h2>
 
-						<div class="hero-cta">
-							<button href="#products" class="btn-green">Shop Now</button>
-							<button class="btn-white">Learn more</button>
+							<div class="buttons">
+								<button href="#products" class="btn-green">Shop Now</button>
+								<button class="btn-white">Learn more</button>
+							</div>
+						</div>
+
+						<div class="tree-container tree-right">
+							<img class="tree right" src="images/tr1.png" alt="big-tree-image" />
 						</div>
 					</div>
 
-					<div class="right flex-center">
-						<img src="images/tr1.png" alt="big-tree-image" />
+					<div class="social flex-center">
+						<i class="fa-brands flex-center fa-facebook-f"></i>
+						<i class="fa-brands flex-center fa-twitter"></i>
+						<i class="fa-brands flex-center fa-linkedin-in"></i>
+						<i class="fa-brands flex-center fa-youtube"></i>
 					</div>
 				</div>
 
-				<div class="social flex-center">
-					<i class="fa-brands flex-center fa-facebook-f"></i>
-					<i class="fa-brands flex-center fa-twitter"></i>
-					<i class="fa-brands flex-center fa-linkedin-in"></i>
-					<i class="fa-brands flex-center fa-youtube"></i>
+				<div class="tree-container tree-bottom">
+					<img class="tree bottom" src="images/tr1.png" alt="big-tree-image" />
 				</div>
 			</div>
 		</section>
@@ -114,14 +121,14 @@
 		<section id="about" class="section flex-center">
 			<div class="section-wrap">
 				<h3 class="section-title"><span class="text-green">About </span>us</h3>
-				<p class="about-p1">
+				<p class="section-paragraph about-p1">
 					Welcome to greenfuture, your trusted source for high-quality trees and plants! We are passionate about
 					bringing the beauty of nature to homes, gardens, and landscapes. Whether you're looking for fruit trees, shade
 					trees, or ornamental plants, we are here to help you find the perfect addition to your space. Our team of
 					experts is dedicated to providing exceptional customer service and expert advice to help you choose the right
 					trees and plants for your needs.
 				</p>
-				<p class="about-p2">
+				<p class="section-paragraph about-p2">
 					At greenfuture, our mission is to promote greener environments by providing healthy, sustainable, and
 					carefully nurtured trees. We believe that every tree planted contributes to a healthier planet, cleaner air,
 					and a more beautiful world. That's why we are committed to offering a wide selection of trees and plants that
@@ -297,14 +304,12 @@
 		<section id="contact" class="section flex-center">
 			<div class="section-wrap">
 				<div class="contact-grid">
-					<div class="right">
-						<img src="images/tr2.png" alt="" />
-					</div>
+					<div class="image"></div>
 
 					<div class="left">
 						<h3 class="section-title"><span class="text-green">get in </span> touch</h3>
 
-						<p>Let’s create something amazing together. Send us a message now!</p>
+						<p class="section-paragraph">Let’s create something amazing together. Send us a message now!</p>
 
 						<div class="form">
 							<input class="input-1" type="text" placeholder="Your name" spellcheck="false" />
@@ -317,26 +322,24 @@
 			</div>
 		</section>
 
-		<section id="footer">
-			<div class="section-wrap flex-center">
-				<div>
-					<div class="social flex-center">
-						<i class="fa-brands flex-center fa-facebook-f"></i>
-						<i class="fa-brands flex-center fa-twitter"></i>
-						<i class="fa-brands flex-center fa-linkedin-in"></i>
-						<i class="fa-brands flex-center fa-youtube"></i>
-					</div>
+		<section id="footer" class="flex-center">
+			<div class="limited-width">
+				<div class="social flex-center">
+					<i class="fa-brands flex-center fa-facebook-f"></i>
+					<i class="fa-brands flex-center fa-twitter"></i>
+					<i class="fa-brands flex-center fa-linkedin-in"></i>
+					<i class="fa-brands flex-center fa-youtube"></i>
+				</div>
 
-					<div class="copyright flex-center" style="position: relative">
-						<div class="butterfly butterfly-1"></div>
-						<span class="text">© Ibtissame Hsini</span>
-						<div class="butterfly butterfly-2"></div>
-					</div>
+				<div class="copyright flex-center" style="position: relative">
+					<div class="butterfly butterfly-1"></div>
+					<span class="text">© Ibtissame Hsini</span>
+					<div class="butterfly butterfly-2"></div>
 				</div>
 			</div>
 		</section>
 
-		<script src="scripts/navbar.js"></script>
+		<script src="scripts/header.js"></script>
 
 		<script src="scripts/butterfly.js" type="module"></script>
 

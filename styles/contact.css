@@ -1,0 +1,70 @@
+#contact .contact-grid {
+	height: fit-content;
+	display: grid;
+	grid-template-columns: 0fr 1fr;
+}
+
+#contact .image {
+	visibility: hidden;
+	width: 0;
+}
+
+#contact .form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+}
+
+#contact input,
+#contact textarea {
+	padding: 8px 15px;
+	font-size: 1rem;
+	background-color: transparent;
+	border: 1px solid var(--text-color);
+	border-radius: 10px;
+}
+
+#contact textarea {
+	height: 10rem;
+	resize: none;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+	color: var(--text-color);
+	opacity: 0.75;
+}
+
+#contact button {
+	padding: 8px 15px;
+	border-radius: 10px;
+}
+
+@media screen and (min-width: 600px) {
+	#contact .contact-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#contact .image {
+		visibility: visible;
+		width: 90%;
+		margin-inline: auto;
+		background-image: url(/images/tr2.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	#contact .image img {
+		width: 100%;
+		height: 100%;
+		filter: drop-shadow(0 0 5px var(--section-hover));
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#contact .image {
+		width: 70%;
+	}
+}

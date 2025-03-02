@@ -1,0 +1,195 @@
+#header {
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: var(--section-bg);
+	backdrop-filter: blur(12px);
+}
+
+#header .logo {
+	font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+#header .logo .leaf-logo {
+	width: 17px;
+	height: 17px;
+}
+
+#header .logo .butterfly {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: -10.5px;
+	left: -4.5px;
+}
+
+#header .nav-item {
+	cursor: pointer;
+	position: relative;
+	transition: 0.3s;
+}
+
+#header .nav-item::before {
+	content: '';
+	width: 0%;
+	height: 2px;
+	position: absolute;
+	left: 50%;
+	bottom: -5px;
+	transform: translateX(-50%);
+	background-color: var(--text-color);
+	box-shadow: 0 0 3px var(--text-color);
+	transition: 0.3s;
+}
+
+#header .nav-item:hover {
+	text-shadow: 0 0 10px var(--text-color);
+}
+
+#header .nav-item:hover::before {
+	width: 100%;
+}
+
+#header .buttons > * {
+	font-weight: normal;
+	font-size: 0.9rem;
+}
+
+@media screen and not (min-width: 790px) {
+	#header {
+		padding-block: 14px;
+	}
+
+	#header + * {
+		margin-top: 48px;
+	}
+
+	#header .limited-width {
+		padding: 0;
+	}
+
+	#header .right-side {
+		visibility: hidden;
+		width: 0;
+	}
+}
+
+@media screen and (min-width: 790px) {
+	#header:not(.within-hero) {
+		padding-block: 14px;
+	}
+
+	#header.within-hero {
+		width: calc(100vw - 10px);
+		margin-top: min(7vh, 74px);
+		position: absolute;
+		background: none;
+		backdrop-filter: none;
+	}
+
+	#header.within-hero + * {
+		margin-top: 0;
+	}
+
+	#header.prepare-hero {
+		transition: background-color 0s ease-in-out;
+	}
+
+	#header.remove-hero {
+		transition: background-color 0.5s ease-in-out;
+	}
+
+	#header.within-hero .limited-width {
+		padding-block: calc(min(4vh, 42.28px) + 14px) 0;
+	}
+
+	#header:not(.within-hero) .limited-width {
+		margin-right: 50px;
+		padding-block: 0;
+	}
+
+	#header .logo {
+		font-size: 1.45rem;
+	}
+
+	#header .logo .leaf-logo {
+		width: 19px;
+		height: 19px;
+	}
+
+	#header .logo .butterfly {
+		width: 19px;
+		height: 19px;
+		top: -8.5px;
+		left: -1.5px;
+	}
+
+	#header .right-side,
+	#header .right-side > * {
+		gap: 9px;
+	}
+
+	#header .nav-item,
+	#header .buttons > * {
+		font-size: 0.9rem;
+		font-weight: normal;
+	}
+}
+
+@media screen and (min-width: 805px) {
+	#header .logo {
+		font-size: 1.6rem;
+	}
+
+	#header .logo .leaf-logo {
+		width: 25px;
+		height: 25px;
+	}
+
+	#header .logo .butterfly {
+		width: 25px;
+		height: 25px;
+		top: -8.5px;
+		left: -4.5px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#header .logo {
+		font-size: 2rem;
+	}
+
+	#header .logo .leaf-logo {
+		width: 30px;
+		height: 30px;
+	}
+
+	#header .logo .butterfly {
+		width: 25px;
+		height: 25px;
+		top: -8.5px;
+		left: -4.5px;
+	}
+
+	#header .right-side,
+	#header .right-side > * {
+		gap: 15px;
+	}
+
+	#header .nav-item,
+	#header .buttons > * {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 1160px) {
+	#header .right-side,
+	#header .right-side > * {
+		gap: 20px;
+	}
+}
