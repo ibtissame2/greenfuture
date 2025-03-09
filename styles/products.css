@@ -245,18 +245,8 @@
 }
 
 .shopping-cart {
-	position: relative;
-	right: 1rem;
-	bottom: 1rem;
-	width: 4rem;
-	height: 4rem;
-	border-radius: 50%;
-	outline: 0.5rem solid transparent;
 	text-align: center;
-	line-height: 4rem;
-	cursor: pointer;
-	box-shadow: 0 0.2rem 0.6rem #0006;
-	transition: 0.5s ease-in-out;
+	/* Adjust the height as needed */
 }
 
 .shopping-cart.active {
@@ -266,11 +256,6 @@
 
 .shopping-cart.active > span {
 	margin-left: -4rem;
-}
-
-.arrow:hover,
-.shopping-cart:hover {
-	outline: 0.5rem solid #fff5;
 }
 
 .shopping-cart::before {

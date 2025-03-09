@@ -90,6 +90,15 @@ body {
 	border-radius: 25px;
 	cursor: pointer;
 	transition: 0.3s;
+	/* Adjust the height as needed */
+}
+.size {
+	width: 90px; /* Adjust the width as needed */
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* Adjust the height as needed */
 }
 
 .btn-green {

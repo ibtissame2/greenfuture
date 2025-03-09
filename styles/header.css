@@ -190,6 +190,6 @@
 @media screen and (min-width: 1160px) {
 	#header .right-side,
 	#header .right-side > * {
-		gap: 20px;
+		gap: 40px;
 	}
 }

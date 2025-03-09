@@ -1,0 +1,257 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+	--primary-color: rgba(139, 195, 74, 1);
+	--primary-blur: rgba(139, 195, 74, 0.3);
+	--text-color: rgba(241, 248, 233, 1);
+	--section-bg: rgba(255, 255, 255, 0.1);
+	--section-blur: rgba(255, 255, 255, 0.3);
+	--section-hover: rgba(255, 255, 255, 0.4);
+	--footer-bg: rgba(19, 34, 23, 1);
+}
+/* ====== BASE ===== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* ====== Body ===== */
+body {
+	background-image: url(../../images/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 0 20px;
+}
+/* ====== Form  ===== */
+.form-container {
+	display: flex;
+	width: 1000px;
+	height: 600px;
+	border: 3px solid rgba(255, 255, 255, 0.2);
+	border-radius: 30px;
+	backdrop-filter: blur(20px);
+	overflow: hidden;
+}
+
+/* ====== First Column ===== */
+.col-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 55%;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(30px);
+	border-radius: 0 30% 20% 0;
+	transition: border-radius 0.3s;
+}
+.image-layer {
+	position: relative;
+	filter: drop-shadow(0 0 20px var(--primary-color));
+}
+.form-image-main {
+	width: 400px;
+}
+.form-image {
+	position: absolute;
+	left: 0;
+	width: 400px;
+}
+
+/* ====== Form Image Animation ===== */
+
+/* ====== Featured Words ===== */
+.featured-words {
+	text-align: center;
+	color: #fff;
+	width: 300px;
+	margin-top: 30px;
+}
+.featured-words span {
+	font-weight: 600;
+	color: rgba(139, 195, 74, 1);
+}
+/* ====== Second Column ===== */
+.col-2 {
+	position: relative;
+	width: 45%;
+	padding: 20px;
+	overflow: hidden;
+}
+.btn-box {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 20px;
+}
+.btn {
+	font-weight: 500;
+	padding: 5px 30px;
+	border: none;
+	border-radius: 30px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+	color: #fff;
+
+	cursor: pointer;
+	transition: 0.2s;
+}
+.btn-1 {
+	background: var(--primary-color);
+}
+.btn:hover {
+	opacity: 0.85;
+
+	box-shadow: 0 5px 30px var(--primary-color);
+}
+.login-form {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 0 4vw;
+	transition: 0.3s;
+}
+.register-form {
+	position: absolute;
+	left: -50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 0 4vw;
+	transition: 0.3s;
+}
+.register-form .form-title {
+	margin-block: 40px 20px;
+}
+.form-title {
+	font-size: 28px;
+	font-weight: 600;
+	color: #fff;
+	margin: 40px 0;
+}
+.form-inputs {
+	width: 100%;
+}
+.input-box {
+	position: relative;
+}
+.input-field {
+	width: 100%;
+	height: 55px;
+	padding: 0 15px;
+	margin: 10px 0;
+	color: #fff;
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.input-field:hover {
+	box-shadow: 0 0 10px var(--primary-color);
+}
+::placeholder {
+	color: #fff;
+	font-size: 15px;
+}
+.input-box .icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 15px;
+	color: #fff;
+}
+.forgot-pass {
+	display: flex;
+	justify-content: right;
+	gap: 5px;
+}
+.forgot-pass a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+.forgot-pass a:hover {
+	text-decoration: underline;
+}
+.input-submit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	width: 100%;
+	height: 55px;
+	padding: 0 15px;
+	margin: 10px 0;
+	border: none;
+	border-radius: 10px;
+	background: var(--primary-color);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+
+	cursor: pointer;
+	transition: 0.3s;
+}
+.input-submit:hover {
+	gap: 15px;
+	box-shadow: 0 0 10px var(--primary-color);
+}
+.social {
+	margin: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.social i {
+	height: 30px;
+	width: 30px;
+	font-size: 0.75rem;
+	border: 1px solid var(--text-color);
+	border-radius: 25px;
+	margin: 10px;
+	cursor: pointer;
+	transition: 0.3s;
+	color: var(--text-color);
+}
+
+.social i:hover {
+	border-color: var(--primary-color);
+	box-shadow: 0 0 25px var(--primary-color);
+	text-shadow: 0 0 25px var(--primary-color);
+	transform: rotate(360deg);
+	color: var(--primary-color);
+}
+@media screen and (min-width: 486px) {
+	.social i {
+		height: 40px;
+		width: 40px;
+		font-size: 1.2rem;
+	}
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*  ======= Login Form ========  */
+
+/*  ======= Register Form ========  */
+
+/* ======== Responsive ======== */

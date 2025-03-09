@@ -7,6 +7,7 @@
 #contact .image {
 	visibility: hidden;
 	width: 0;
+	filter: drop-shadow(0 0 20px var(--primary-color));
 }
 
 #contact .form {
